@@ -21,7 +21,7 @@ client.on('message', message => {
         message.reply(config.perfix + config.commad + '  เพื่อเติมเงิน')
     }
     if (msg[0] === config.perfix + config.commad) {
-        message.reply(config.perfix + config.commad + ': ลิ้งอังเป่า')
+        //message.reply(config.perfix + config.commad + ': ลิ้งอังเป่า')
         axios({
                 method: 'POST',
                 url: 'https://gift.truemoney.com/campaign/vouchers/' + link[1] + '/redeem',
